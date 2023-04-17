@@ -7,13 +7,16 @@ creare lista mail accessibili
 */
 
 const mailList = ['@gmail', '@virgilio', '@libero', '@hotmail', '@yahoo'];
-const email = prompt('Che tipo di email usi? es:@gmail');
-
+const email = prompt('Che tipo di email usi?');
+let flag = false;
 for (let i = 0; i < mailList.length; i++) {
-    console.log(mailList[i])
     if (mailList[i] == email) {
-        console.log('La mail è presente')
-    } else {
-        // console.log('La mail inserita non è valida')
+        flag = true;
     }
+}
+
+if (flag == true) {
+    console.log('La mail è valida')
+} else {
+    console.log('La mail che hai inserito non è valida')
 }

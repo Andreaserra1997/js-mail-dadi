@@ -13,3 +13,11 @@ generare un numero random da 1 a 6 per il computer e metterlo nella variabile co
         ALLORA stampa: Il computer ha vinto
     ALTRIMENTI stampa: I numeri sono uguali, pareggio!
 */
+
+const mailList = ['@gmail', '@virgilio', '@libero', '@hotmail', '@yahoo'];
+
+const email = prompt('Che tipo di email usi? es:@gmail');
+
+for (let i = 0; i < mailList.length; i+=email) {
+    console.log(mailList[i])
+}
